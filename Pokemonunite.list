@@ -1,0 +1,3 @@
+HOST-SUFFIX, pokemon-unitepgame.com, proxy
+IP-CIDR, 43.133.33.0/24, direct
+IP-CIDR, 43.133.35.0/24, direct
