@@ -14,7 +14,7 @@ var newobj = {
     "has_old_password": true
 }
 
-body = JSON.stringify(obj);
+body = JSON.stringify(newobj);
 
 // console.log(body);
 
