@@ -1,4 +1,4 @@
-hostname = *.sinaimg.cn, *.xhscdn.com, api.revenuecat.com, api.picsart.c*, api.meiease.c*, api.frdic.com, api.esdict.cn, ap?.bili*i.com, ap?.bili*i.net
+hostname = *.sinaimg.cn, *.xhscdn.com, api.revenuecat.com, api.picsart.c*, api.meiease.c*, api.frdic.com, api.esdict.cn/api/v2/auth/UserInfo, ap?.bili*i.com, ap?.bili*i.net
 
 #微博/绿洲请求高清图
 (^https?:\/\/(?:wx|lz)\d+\.sinaimg\.cn\/)((?:(?!360)(?!480)\w)+)(\/.*\.jpg) url 302 $1large$3
