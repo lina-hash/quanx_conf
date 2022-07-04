@@ -10,7 +10,7 @@ hostname = *.sinaimg.cn, *.xhscdn.com, api.revenuecat.com, api.picsart.c*, api.m
 # PicsArt美易 pro
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
 # ting vip
-^https://api\.frdic\.com/api/v2/auth/UserInfo url script-response-body https://raw.githubusercontent.com/lina-hash/quanx_conf/master/tingvip.js
+^https://api\.(frdic|esdict)\.(com|cn)/api/v2/auth/UserInfo url script-response-body https://raw.githubusercontent.com/lina-hash/quanx_conf/master/tingvip.js
 # dic vip
 ^https://api\.frdic\.com/api/v2/appsupport/checkiv url response-body \{.+\} response-body {"isRVing":true,"hidePayment":true}
 
