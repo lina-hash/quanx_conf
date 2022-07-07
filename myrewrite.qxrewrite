@@ -1,4 +1,4 @@
-hostname = *.sinaimg.cn, *.xhscdn.com, api.revenuecat.com, api.picsart.c*, api.meiease.c*, api.frdic.com, ap?.bili*i.com, ap?.bili*i.net
+hostname = *.sinaimg.cn, *.xhscdn.com, api.revenuecat.com, api.picsart.c*, api.meiease.c*, ap?.bili*i.com, ap?.bili*i.net
 
 #微博/绿洲请求高清图
 (^https?:\/\/(?:wx|lz)\d+\.sinaimg\.cn\/)((?:(?!360)(?!480)\w)+)(\/.*\.jpg) url 302 $1large$3
@@ -9,10 +9,6 @@ hostname = *.sinaimg.cn, *.xhscdn.com, api.revenuecat.com, api.picsart.c*, api.m
 ^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 # PicsArt美易 pro
 ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
-# ting vip
-^https://api\.(frdic|esdict)\.(com|cn)/api/v2/auth/UserInfo url script-response-body https://raw.githubusercontent.com/lina-hash/quanx_conf/master/tingvip.js
-# dic vip
-^https://api\.frdic\.com/api/v2/appsupport/checkiv url response-body \{.+\} response-body {"isRVing":true,"hidePayment":true}
 
 # YouTube去广告
 ^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
