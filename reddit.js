@@ -11,6 +11,8 @@ if ('data' in obj) {
         removeAD(obj.data.home.elements.edges)
     else if ('popular' in obj.data)
         removeAD(obj.data.popular.elements.edges)
+    else if ('children' in obj.data && 'commentsPageAds' in obj.data.children)
+        obj.data.children.commentsPageAds = []
 }
 
 function removeAD(edges) {
