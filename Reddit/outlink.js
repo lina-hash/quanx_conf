@@ -1,4 +1,4 @@
-var url = $request.url.replace(/^https?:\/\/out.reddit.com\/.*url=(https?[\w%\.]+).*/g, "$1")
+var url = $request.url.replace(/^https?:\/\/out.reddit.com\/.*url=(https?[\w%\.\(\)\-]+).*/g, "$1")
 var modifiedHeaders = $response.headers;
 modifiedHeaders['Location'] = decodeURIComponent(url);
 
