@@ -10,7 +10,7 @@ if ($response.body.includes("adEvents")) {
     } else if (body.data.popular) {
         removeAD(body.data.popular.elements)
         $done({ body: JSON.stringify(body) });
-    } else if (body.data.children.commentsPageAds) {
+    } else if (body.data.children && body.data.children.commentsPageAds) {
         body.data.children.commentsPageAds = []
         $done({ body: JSON.stringify(body) });
     } else {
