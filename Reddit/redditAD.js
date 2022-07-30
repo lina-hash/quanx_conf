@@ -1,8 +1,8 @@
 //
 if ($response.body.includes("adEvents")) {
     var body = JSON.parse($response.body || null);
-    if (body.data.news) {
-        removeAD(body.data.news.elements)
+    if (body.data.subredditInfoByName) {
+        removeAD(body.data.subredditInfoByName.elements)
         $done({ body: JSON.stringify(body) });
     } else if (body.data.home) {
         removeAD(body.data.home.elements)
