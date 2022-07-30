@@ -20,6 +20,6 @@ if ($response.body.includes("adEvents")) {
     $done({});
 }
 
-function removeAD(edges) {
+function removeAD(elements) {
     elements.edges = elements.edges.filter((n) => !n.node.adEvents)
 }
