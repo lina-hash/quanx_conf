@@ -5,3 +5,4 @@ hostname=oauth.reddit.com, gql.reddit.com, out.reddit.com
 ^https?://oauth.reddit.com/r/\w+/comments/.+\.json\?.+ url script-response-body https://raw.githubusercontent.com/lina-hash/quanx_conf/master/Reddit/newsAD.js
 ^https?://gql.reddit.com url script-response-body https://raw.githubusercontent.com/lina-hash/quanx_conf/master/Reddit/redditAD.js
 ^https?://out.reddit.com/.*url=(https?[\w%\.]+).* url script-response-header https://raw.githubusercontent.com/lina-hash/quanx_conf/master/Reddit/outlink.js
+^https?://oauth\.reddit\.com/api/comments_page_ads\.json url reject
